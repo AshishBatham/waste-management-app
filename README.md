@@ -16,7 +16,7 @@ This project focuses on optimizing local waste management practices through data
 ---
 
 ## 🗃️ Dataset
-- **Source**: [data.gov.in](https://data.gov.in), [Kaggle](https://www.kaggle.com), local civic databases
+
 - **Features**:
   - Date of collection
   - Region/City
@@ -72,7 +72,7 @@ This project focuses on optimizing local waste management practices through data
 ---
 
 ## 📸 Demo
-A preview of the Streamlit dashboard (Coming Soon…)
+A preview of the Streamlit dashboard 
 
 ---
 
@@ -83,7 +83,4 @@ A preview of the Streamlit dashboard (Coming Soon…)
 
 ---
 
-## 🧑‍💻 Author
-**[Your Name]**  
-[GitHub Profile](https://github.com/yourusername) | [LinkedIn](https://linkedin.com/in/yourprofile)
 
