@@ -1,9 +1,6 @@
-pip install -r requirements.txt
-
 streamlit
 pandas
+numpy
 matplotlib
 seaborn
-numpy
 scikit-learn
-
