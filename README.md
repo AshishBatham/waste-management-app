@@ -1,86 +1,91 @@
 # ♻️ Data-Driven Waste Management Optimization
 
 ## 📌 Project Overview
-This project focuses on optimizing local waste management practices through data science. It tackles issues such as inefficient waste treatment, low recycling rates, and environmental impact by analyzing real-world data to derive actionable insights and predictive models.
+This project leverages data science to improve local waste management systems. It addresses challenges such as inefficient waste treatment, low recycling rates, and the environmental impact of improper disposal. By analyzing real-world data, the project identifies key patterns, forecasts future waste trends, and proposes actionable improvements.
 
 ---
 
 ## 🎯 Objectives
-- Analyze historical waste treatment data to identify sustainable trends.
-- Use clustering to classify dominant waste categories for targeted recycling.
-- Compare regional waste practices and understand influencing factors.
-- Forecast future waste generation using time series modeling.
-- Evaluate performance of waste treatment plants to identify areas for improvement.
-- Discover waste reduction opportunities using pattern mining techniques.
+- 📈 Analyze historical waste generation and treatment trends.
+- ♻️ Classify dominant waste categories using clustering.
+- 🗺️ Compare regional waste treatment practices and identify influencing factors.
+- 🔮 Forecast future waste generation using time series models.
+- 🏭 Evaluate facility performance for operational improvement.
+- 🔍 Discover waste reduction strategies through pattern mining.
 
 ---
 
 ## 🗃️ Dataset
+The dataset includes multi-dimensional waste generation data collected over several years:
 
-- **Features**:
-  - Date of collection
-  - Region/City
-  - Waste types (Organic, Plastic, Metal, etc.)
-  - Waste treatment method (Recycled, Incinerated, Landfilled)
-  - Facility operational metrics (emissions, efficiency, recycling rate)
+| Feature | Description |
+|--------|-------------|
+| `Date` | Date of waste collection |
+| `Country / Region` | Geographical location |
+| `Material` | Waste type (e.g., Organic, Plastic, Metal) |
+| `Waste generated` | Quantity of waste (in tons) |
+
+
+> Data Source: Government open data portals, community datasets, and Kaggle contributions.
 
 ---
 
 ## 🧠 Technologies Used
 - **Languages**: Python
-- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Statsmodels, Mlxtend
-- **Modeling**: ARIMA, KMeans Clustering, Association Rule Mining
-- **Dashboard**: Streamlit
-- **Version Control**: Git + GitHub
+- **Libraries**: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`
+- **Models**: Linear Regression, KMeans Clustering, PCA
+- **Visualization**: Streamlit dashboard
+- **Version Control**: Git & GitHub
 
 ---
 
 ## 🧪 Key Components
-### 📊 Exploratory Data Analysis
-- Trend analysis (waste over time, by type, and by region)
-- Regional comparison of waste treatment methods
 
-### 🔄 Waste Type Clustering
-- KMeans clustering to identify dominant waste categories
+### 1. 📊 Exploratory Data Analysis
+- Waste trends by country, year, and material
+- Heatmaps and bar plots to uncover patterns
+- Regional waste distribution analysis
 
-### 📈 Waste Forecasting
-- ARIMA model for monthly waste generation prediction
+### 2. 🧱 Waste Type Clustering
+- KMeans clustering to classify dominant waste categories
+- Identification of high-priority materials for recycling
 
-### ⚙️ Facility Efficiency Analysis
-- Aggregation of performance metrics by facility
-- Visualization of plant throughput and emissions
+### 3. 📈 Forecasting Waste Generation
+- Time series modeling using Linear Regression or ARIMA
+- 5-year forecast of total global waste trends
 
-### 🧠 Pattern Mining
-- Association Rule Mining to find waste generation patterns
-- Insights for targeted waste reduction strategies
+### 4. ⚙️ Facility Performance Assessment
+- (Planned extension) Analyze treatment plant throughput, emissions, and recycling rates
 
+### 5. 🔁 Pattern Mining
+- (Planned extension) Use Association Rule Mining to identify waste generation patterns and seasonal spikes
+
+---
+
+## 📊 Dashboard Demo (Streamlit)
+The interactive dashboard includes:
+
+- Filters by year, country, and material
+- Top 10 waste-generating countries
+- Material-wise waste visualization
+- 5-year global waste forecast
+
+> 💻 [Live Demo (Streamlit)](https://share.streamlit.io/AshishBatham/waste-management-app/main/app.py) 
 ---
 
 ## 📈 Results
-- Identified 3 dominant waste clusters for strategic recycling
-- Forecasted 12-month waste generation trend with 90%+ accuracy
-- Highlighted regional inefficiencies in 2 treatment plants
-- Mapped correlations between urban activity and waste spikes
+- Identified top waste-generating countries and materials
+- Forecasted future waste generation with strong linear trend
+- Enabled targeted filtering for region-specific waste insights
+- Set the foundation for clustering and reduction strategy modeling
 
 ---
 
-## 💡 Future Work
-- Integrate LSTM or Prophet for advanced forecasting
-- Deploy dashboard on Azure for public reporting
-- Add live IoT-based data ingestion for real-time updates
+## 🚀 Future Work
+- Integrate LSTM or Facebook Prophet for advanced forecasting
+- Implement real-time data ingestion from IoT or APIs
+- Expand clustering to include treatment methods
+- Deploy app on Azure or AWS for broader access
 
 ---
-
-## 📸 Demo
-A preview of the Streamlit dashboard 
-
----
-
-## 🙌 Acknowledgements
-- Government open data portals
-- Kaggle contributors
-- Community waste management forums
-
----
-
 
