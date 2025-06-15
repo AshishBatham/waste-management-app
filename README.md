@@ -26,7 +26,8 @@ The dataset includes multi-dimensional waste generation data collected over seve
 | `Waste generated` | Quantity of waste (in tons) |
 
 
-> Data Source: Government open data portals, community datasets, and Kaggle contributions.
+> Data Source: Government open data portals, community datasets
+            (https://stats.oecd.org/Index.aspx?DataSetCode=WASTE)
 
 ---
 
@@ -70,7 +71,7 @@ The interactive dashboard includes:
 - Material-wise waste visualization
 - 5-year global waste forecast
 
-> 💻 [Live Demo (Streamlit)](https://share.streamlit.io/AshishBatham/waste-management-app/main/app.py) 
+> 💻 [Live Demo (Streamlit)](https://waste-management-app.streamlit.app/) 
 ---
 
 ## 📈 Results
