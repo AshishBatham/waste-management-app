@@ -1,0 +1,222 @@
+Country,Year,Material,Waste generated,Category,Country_enc,Material_enc
+Australia,2019,All metals,5601572.118473801,Other,1,0
+Australia,2019,Aluminium,315841.92326124996,Other,1,1
+Australia,2019,Ferrous metals,4256252.5826565,Other,1,2
+Australia,2019,Fly ash,10960997.0,Other,1,3
+Australia,2019,Glass,1163069.7680051,Recyclable,1,4
+Australia,2019,Lead,231410.49025988,Other,1,5
+Australia,2019,Masonry materials,22891678.882555,Other,1,6
+Australia,2019,Organics,14885039.496551,Other,1,7
+Australia,2019,Other non-ferrous metals,238216.49252369,Other,1,8
+Australia,2019,Packaging - glass,1282891.1210703,Other,1,9
+Australia,2019,Packaging - metals,246261.434437,Other,1,10
+Australia,2019,Packaging - paper and paperboard,3262468.9400000004,Other,1,11
+Australia,2019,Packaging - plastic,1000488.2948012,Other,1,12
+Australia,2019,"Paper, paperboard and paper products",5917485.529525801,Other,1,13
+Australia,2019,Plastics,2503369.1048034998,Other,1,14
+Australia,2019,Solid hazardous waste,5837388.825721,Other,1,15
+Australia,2019,Total packaging,5792109.7903085,Other,1,16
+Australia,2020,All metals,5572822.685400199,Other,1,0
+Australia,2020,Aluminium,186791.84131233,Other,1,1
+Australia,2020,Ferrous metals,0.0,Other,1,2
+Australia,2020,Fly ash,10732878.0,Other,1,3
+Australia,2020,Glass,1492179.2353462,Recyclable,1,4
+Australia,2020,Lead,266449.75518062,Other,1,5
+Australia,2020,Masonry materials,23921225.917243,Other,1,6
+Australia,2020,Organics,14266275.689187,Other,1,7
+Australia,2020,Other non-ferrous metals,227147.28774454,Other,1,8
+Australia,2020,Packaging - glass,1155801.4874878,Other,1,9
+Australia,2020,Packaging - metals,247844.79299412,Other,1,10
+Australia,2020,Packaging - paper and paperboard,3277266.8347248,Other,1,11
+Australia,2020,Packaging - plastic,1123849.7968166,Other,1,12
+Australia,2020,"Paper, paperboard and paper products",5506913.9012287995,Other,1,13
+Australia,2020,Plastics,2481859.1061524,Other,1,14
+Australia,2020,Solid hazardous waste,5225473.1178841,Other,1,15
+Australia,2020,Total packaging,5804762.912023299,Other,1,16
+Australia,2021,All metals,5124831.2926288,Other,1,0
+Australia,2021,Aluminium,193549.8445536,Other,1,1
+Australia,2021,Ferrous metals,0.0,Other,1,2
+Australia,2021,Fly ash,10110820.5,Other,1,3
+Australia,2021,Glass,1548940.2140123,Recyclable,1,4
+Australia,2021,Lead,206260.69590367,Other,1,5
+Australia,2021,Masonry materials,25011214.901881002,Other,1,6
+Australia,2021,Organics,15376357.583668,Other,1,7
+Australia,2021,Other non-ferrous metals,194417.1295552,Other,1,8
+Australia,2021,Packaging - glass,1282956.8651683,Other,1,9
+Australia,2021,Packaging - metals,253697.20916375,Other,1,10
+Australia,2021,Packaging - paper and paperboard,3386792.3969836,Other,1,11
+Australia,2021,Packaging - plastic,1179129.0627759,Other,1,12
+Australia,2021,"Paper, paperboard and paper products",5123219.4621882,Other,1,13
+Australia,2021,Plastics,2609479.0636234004,Other,1,14
+Australia,2021,Solid hazardous waste,5257215.1335341,Other,1,15
+Australia,2021,Total packaging,6102575.534091501,Other,1,16
+Australia,2022,All metals,5199421.0675288,Other,1,0
+Australia,2022,Aluminium,243417.28953328,Other,1,1
+Australia,2022,Ferrous metals,3887982.4025628,Other,1,2
+Australia,2022,Fly ash,9488763.0,Other,1,3
+Australia,2022,Glass,1286692.1475146,Recyclable,1,4
+Australia,2022,Lead,175865.10266434998,Other,1,5
+Australia,2022,Masonry materials,25201946.550843,Other,1,6
+Australia,2022,Organics,14697831.049384,Other,1,7
+Australia,2022,Other non-ferrous metals,458760.88093986997,Other,1,8
+Australia,2022,Packaging - glass,1143072.7808686,Other,1,9
+Australia,2022,Packaging - metals,298039.20726434,Other,1,10
+Australia,2022,Packaging - paper and paperboard,3653993.0784367,Other,1,11
+Australia,2022,Packaging - plastic,1276976.0138248,Other,1,12
+Australia,2022,"Paper, paperboard and paper products",5117149.6074458,Other,1,13
+Australia,2022,Plastics,2934454.6701013,Other,1,14
+Australia,2022,Solid hazardous waste,4331426.3323617,Other,1,15
+Australia,2022,Total packaging,6372081.080394399,Other,1,16
+Australia,2023,All metals,5973049.926114799,Other,1,0
+Australia,2023,Aluminium,274573.95977158,Other,1,1
+Australia,2023,Ferrous metals,4602333.465181501,Other,1,2
+Australia,2023,Fly ash,8742315.0,Other,1,3
+Australia,2023,Glass,1356282.6619197002,Recyclable,1,4
+Australia,2023,Lead,250786.34034435,Other,1,5
+Australia,2023,Masonry materials,26793775.675866,Other,1,6
+Australia,2023,Organics,14622796.325693,Other,1,7
+Australia,2023,Other non-ferrous metals,485873.24865968997,Other,1,8
+Australia,2023,Packaging - glass,1105424.4306192,Other,1,9
+Australia,2023,Packaging - metals,302104.08830825996,Other,1,10
+Australia,2023,Packaging - paper and paperboard,3805209.8553179,Other,1,11
+Australia,2023,Packaging - plastic,1264766.2206722,Other,1,12
+Australia,2023,"Paper, paperboard and paper products",4877536.423378601,Other,1,13
+Australia,2023,Plastics,2988601.3384617,Other,1,14
+Australia,2023,Solid hazardous waste,4340360.1218502,Other,1,15
+Australia,2023,Total packaging,6477504.5949176,Other,1,16
+European Union (27 countries from 01/02/2020),2019,Packaging - glass,15202260.0,Other,13,9
+European Union (27 countries from 01/02/2020),2019,Packaging - metals,3973835.0,Other,13,10
+European Union (27 countries from 01/02/2020),2019,Packaging - paper and paperboard,32268790.0,Other,13,11
+European Union (27 countries from 01/02/2020),2019,Packaging - plastic,15262790.0,Other,13,12
+European Union (27 countries from 01/02/2020),2019,Total packaging,79339960.0,Other,13,16
+European Union (27 countries from 01/02/2020),2020,All metals,9370000.0,Other,13,0
+European Union (27 countries from 01/02/2020),2020,Ferrous metals,64220000.0,Other,13,2
+European Union (27 countries from 01/02/2020),2020,Glass,17850000.0,Recyclable,13,4
+European Union (27 countries from 01/02/2020),2020,Masonry materials,305650000.0,Other,13,6
+European Union (27 countries from 01/02/2020),2020,Other non-ferrous metals,8480000.0,Other,13,8
+European Union (27 countries from 01/02/2020),2020,Packaging - glass,15150260.0,Other,13,9
+European Union (27 countries from 01/02/2020),2020,Packaging - metals,3982625.0,Other,13,10
+European Union (27 countries from 01/02/2020),2020,Packaging - paper and paperboard,32703000.0,Other,13,11
+European Union (27 countries from 01/02/2020),2020,Packaging - plastic,15453670.0,Other,13,12
+European Union (27 countries from 01/02/2020),2020,"Paper, paperboard and paper products",43510000.0,Other,13,13
+European Union (27 countries from 01/02/2020),2020,Plastics,18950000.0,Other,13,14
+European Union (27 countries from 01/02/2020),2020,Total packaging,79570930.0,Other,13,16
+European Union (27 countries from 01/02/2020),2021,Packaging - glass,15696880.0,Other,13,9
+European Union (27 countries from 01/02/2020),2021,Packaging - metals,4174880.0,Other,13,10
+European Union (27 countries from 01/02/2020),2021,Packaging - paper and paperboard,34041760.0,Other,13,11
+European Union (27 countries from 01/02/2020),2021,Packaging - plastic,16208900.0,Other,13,12
+European Union (27 countries from 01/02/2020),2021,Total packaging,84820840.0,Other,13,16
+European Union (27 countries from 01/02/2020),2022,All metals,9930000.0,Other,13,0
+European Union (27 countries from 01/02/2020),2022,Ferrous metals,75500000.0,Other,13,2
+European Union (27 countries from 01/02/2020),2022,Glass,18230000.0,Recyclable,13,4
+European Union (27 countries from 01/02/2020),2022,Masonry materials,324230000.0,Other,13,6
+European Union (27 countries from 01/02/2020),2022,Other non-ferrous metals,8840000.0,Other,13,8
+European Union (27 countries from 01/02/2020),2022,Packaging - glass,15703070.0,Other,13,9
+European Union (27 countries from 01/02/2020),2022,Packaging - metals,4091866.0,Other,13,10
+European Union (27 countries from 01/02/2020),2022,Packaging - paper and paperboard,34008610.0,Other,13,11
+European Union (27 countries from 01/02/2020),2022,Packaging - plastic,16162590.0,Other,13,12
+European Union (27 countries from 01/02/2020),2022,"Paper, paperboard and paper products",44050000.0,Other,13,13
+European Union (27 countries from 01/02/2020),2022,Plastics,20290000.0,Other,13,14
+European Union (27 countries from 01/02/2020),2022,Total packaging,83495750.0,Other,13,16
+France,2019,Packaging - glass,2887673.0,Other,15,9
+France,2019,Packaging - metals,563385.0,Other,15,10
+France,2019,Packaging - paper and paperboard,4940160.0,Other,15,11
+France,2019,Packaging - plastic,2390254.0,Other,15,12
+France,2019,Total packaging,12602000.0,Other,15,16
+France,2020,All metals,2904166.0,Other,15,0
+France,2020,Ferrous metals,11200000.0,Other,15,2
+France,2020,Glass,2552314.0,Recyclable,15,4
+France,2020,Masonry materials,61223330.0,Other,15,6
+France,2020,Other non-ferrous metals,1270116.0,Other,15,8
+France,2020,Packaging - glass,2863227.0,Other,15,9
+France,2020,Packaging - metals,554627.0,Other,15,10
+France,2020,Packaging - paper and paperboard,5004912.0,Other,15,11
+France,2020,Packaging - plastic,2411592.0,Other,15,12
+France,2020,"Paper, paperboard and paper products",6318299.0,Other,15,13
+France,2020,Plastics,2317353.0,Other,15,14
+France,2020,Total packaging,12676670.0,Other,15,16
+France,2021,Packaging - glass,2961170.0,Other,15,9
+France,2021,Packaging - metals,550077.0,Other,15,10
+France,2021,Packaging - paper and paperboard,5353815.0,Other,15,11
+France,2021,Packaging - plastic,2492994.0,Other,15,12
+France,2021,Total packaging,13398560.0,Other,15,16
+France,2022,All metals,3041763.0,Other,15,0
+France,2022,Ferrous metals,11600000.0,Other,15,2
+France,2022,Glass,2612137.0,Recyclable,15,4
+France,2022,Masonry materials,71390700.0,Other,15,6
+France,2022,Other non-ferrous metals,1121736.0,Other,15,8
+France,2022,Packaging - glass,2906086.0,Other,15,9
+France,2022,Packaging - metals,536841.0,Other,15,10
+France,2022,Packaging - paper and paperboard,5459839.0,Other,15,11
+France,2022,Packaging - plastic,2433116.0,Other,15,12
+France,2022,"Paper, paperboard and paper products",6569800.0,Other,15,13
+France,2022,Plastics,2482425.0,Other,15,14
+France,2022,Total packaging,12832970.0,Other,15,16
+Germany,2019,Packaging - glass,3085900.0,Other,16,9
+Germany,2019,Packaging - metals,1003400.0,Other,16,10
+Germany,2019,Packaging - paper and paperboard,8252900.0,Other,16,11
+Germany,2019,Packaging - plastic,3249700.0,Other,16,12
+Germany,2019,Total packaging,18907700.0,Other,16,16
+Germany,2020,All metals,533997.0,Other,16,0
+Germany,2020,Ferrous metals,9580935.0,Other,16,2
+Germany,2020,Glass,3506496.0,Recyclable,16,4
+Germany,2020,Masonry materials,89279200.0,Other,16,6
+Germany,2020,Other non-ferrous metals,1425173.0,Other,16,8
+Germany,2020,Packaging - glass,3135200.0,Other,16,9
+Germany,2020,Packaging - metals,1002100.0,Other,16,10
+Germany,2020,Packaging - paper and paperboard,8238100.0,Other,16,11
+Germany,2020,Packaging - plastic,3302500.0,Other,16,12
+Germany,2020,"Paper, paperboard and paper products",7164678.0,Other,16,13
+Germany,2020,Plastics,3097163.0,Other,16,14
+Germany,2020,Total packaging,18776800.0,Other,16,16
+Germany,2021,Packaging - glass,3086900.0,Other,16,9
+Germany,2021,Packaging - metals,1018731.0,Other,16,10
+Germany,2021,Packaging - paper and paperboard,8512096.0,Other,16,11
+Germany,2021,Packaging - plastic,3418821.0,Other,16,12
+Germany,2021,Total packaging,19692000.0,Other,16,16
+Germany,2022,All metals,527573.0,Other,16,0
+Germany,2022,Ferrous metals,9752059.0,Other,16,2
+Germany,2022,Glass,3273121.0,Recyclable,16,4
+Germany,2022,Masonry materials,83934510.0,Other,16,6
+Germany,2022,Other non-ferrous metals,1249340.0,Other,16,8
+Germany,2022,Packaging - glass,2991500.0,Other,16,9
+Germany,2022,Packaging - metals,991610.0,Other,16,10
+Germany,2022,Packaging - paper and paperboard,8265959.999999999,Other,16,11
+Germany,2022,Packaging - plastic,3309130.0,Other,16,12
+Germany,2022,"Paper, paperboard and paper products",6743766.0,Other,16,13
+Germany,2022,Plastics,3165373.0,Other,16,14
+Germany,2022,Total packaging,19017200.0,Other,16,16
+Italy,2019,Packaging - glass,2677830.0,Other,21,9
+Italy,2019,Packaging - metals,568450.0,Other,21,10
+Italy,2019,Packaging - paper and paperboard,4938994.0,Other,21,11
+Italy,2019,Packaging - plastic,2314389.0,Other,21,12
+Italy,2019,Total packaging,12880070.0,Other,21,16
+Italy,2020,All metals,717023.0,Other,21,0
+Italy,2020,Ferrous metals,9218280.0,Other,21,2
+Italy,2020,Glass,3404824.0,Recyclable,21,4
+Italy,2020,Masonry materials,46195680.0,Other,21,6
+Italy,2020,Other non-ferrous metals,1261179.0,Other,21,8
+Italy,2020,Packaging - glass,2725268.0,Other,21,9
+Italy,2020,Packaging - metals,548077.0,Other,21,10
+Italy,2020,Packaging - paper and paperboard,4720482.0,Other,21,11
+Italy,2020,Packaging - plastic,2208576.0,Other,21,12
+Italy,2020,"Paper, paperboard and paper products",5715155.0,Other,21,13
+Italy,2020,Plastics,4848441.0,Other,21,14
+Italy,2020,Total packaging,12409100.0,Other,21,16
+Italy,2021,Packaging - glass,2849812.0,Other,21,9
+Italy,2021,Packaging - metals,637263.0,Other,21,10
+Italy,2021,Packaging - paper and paperboard,5300559.0,Other,21,11
+Italy,2021,Packaging - plastic,2270669.0,Other,21,12
+Italy,2021,Total packaging,13594790.0,Other,21,16
+Italy,2022,All metals,728417.0,Other,21,0
+Italy,2022,Ferrous metals,10742560.0,Other,21,2
+Italy,2022,Glass,3763002.0,Recyclable,21,4
+Italy,2022,Masonry materials,55399700.0,Other,21,6
+Italy,2022,Other non-ferrous metals,1608539.0,Other,21,8
+Italy,2022,Packaging - glass,2838419.0,Other,21,9
+Italy,2022,Packaging - metals,613500.0,Other,21,10
+Italy,2022,Packaging - paper and paperboard,5413923.0,Other,21,11
+Italy,2022,Packaging - plastic,2327880.0,Other,21,12
+Italy,2022,"Paper, paperboard and paper products",5953007.0,Other,21,13
+Italy,2022,Plastics,5340127.0,Other,21,14
+Italy,2022,Total packaging,13712380.0,Other,21,16

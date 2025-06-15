@@ -1,87 +1,95 @@
-# app.py
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.cluster import KMeans
-from statsmodels.tsa.arima.model import ARIMA
+import numpy as np
+from sklearn.linear_model import LinearRegression
 
-# Page settings
+# Set Streamlit configuration
 st.set_page_config(page_title="Waste Management Dashboard", layout="wide")
-st.title("♻️ Waste Management Optimization Dashboard")
-st.markdown("Analyze, forecast, and optimize waste management strategies using real-world data.")
 
-# Load data
+# App title and intro
+st.title("♻️ Waste Management Optimization Dashboard")
+st.markdown("""
+This interactive dashboard visualizes waste generation data across countries, years, and materials to help identify reduction opportunities and forecast future trends.
+""")
+
+# Load data with caching
 @st.cache_data
 def load_data():
-    df = pd.read_csv("waste_data.csv")
-    df['Date'] = pd.to_datetime(df['Date'])
-    return df
+    return pd.read_csv(r"C:\DS Project\filtered_waste_data.csv")
 
 df = load_data()
 
 # Sidebar filters
-st.sidebar.header("Filters")
-selected_region = st.sidebar.multiselect("Select Region(s):", df['Region'].unique(), default=df['Region'].unique())
-df_filtered = df[df['Region'].isin(selected_region)]
+st.sidebar.header("🔧 Filters")
+years = st.sidebar.multiselect("Select Year(s)", df['Year'].unique(), default=df['Year'].unique())
+countries = st.sidebar.multiselect("Select Country(s)", df['Country'].unique(), default=df['Country'].unique())
+materials = st.sidebar.multiselect("Select Material(s)", df['Material'].unique(), default=df['Material'].unique())
 
-# Tabs
-tab1, tab2, tab3, tab4 = st.tabs(["📊 Trends", "🔀 Clustering", "📈 Forecasting", "🏭 Facility Analysis"])
+# Apply filters
+filtered_df = df[
+    (df['Year'].isin(years)) &
+    (df['Country'].isin(countries)) &
+    (df['Material'].isin(materials))
+]
 
-# 1. EDA
+# CSV download
+st.sidebar.download_button(
+    label="📥 Download Filtered Data as CSV",
+    data=filtered_df.to_csv(index=False),
+    file_name='filtered_waste_data.csv',
+    mime='text/csv'
+)
+
+# Create tab layout
+tab1, tab2, tab3, tab4 = st.tabs(["📊 Country-wise Waste", "📈 Forecasting", "🧱 Material-wise Waste", "🗃️ Raw Filtered Data"])
+
+# --- Tab 1: Country-wise Waste ---
 with tab1:
-    st.subheader("Waste Generation Over Time")
-    waste_over_time = df_filtered.groupby('Date')['Total_Waste'].sum()
-    st.line_chart(waste_over_time)
+    st.subheader("📊 Top 10 Countries by Total Waste Generated")
+    country_waste = filtered_df.groupby('Country')['Waste generated'].sum().sort_values(ascending=False).head(10)
 
-    st.subheader("Recycled Waste by Region")
-    region_recycle = df_filtered.groupby('Region')['Recycled_Waste'].mean().sort_values(ascending=False)
-    st.bar_chart(region_recycle)
-
-# 2. Clustering
-with tab2:
-    st.subheader("Waste Composition Clustering")
-    waste_cols = ['Organic', 'Plastic', 'Metal', 'Glass']
-    X = df_filtered[waste_cols]
-
-    kmeans = KMeans(n_clusters=3, random_state=42)
-    df_filtered['Cluster'] = kmeans.fit_predict(X)
-
-    fig, ax = plt.subplots()
-    sns.scatterplot(data=df_filtered, x='Organic', y='Plastic', hue='Cluster', palette='tab10', ax=ax)
+    fig, ax = plt.subplots(figsize=(10, 6))
+    sns.barplot(x=country_waste.values, y=country_waste.index, palette="viridis", ax=ax)
+    ax.set_xlabel("Total Waste Generated (Tons)")
+    ax.set_ylabel("Country")
     st.pyplot(fig)
 
-# 3. Forecasting
+# --- Tab 2: Forecasting ---
+with tab2:
+    st.subheader("📈 Forecast: Global Waste Generation")
+
+    ts_df = df.groupby('Year')['Waste generated'].sum().reset_index()
+    X = ts_df['Year'].values.reshape(-1, 1)
+    y = ts_df['Waste generated'].values
+
+    model = LinearRegression()
+    model.fit(X, y)
+
+    future_years = np.array(range(ts_df['Year'].max()+1, ts_df['Year'].max()+6)).reshape(-1, 1)
+    future_preds = model.predict(future_years)
+
+    fig, ax = plt.subplots(figsize=(10, 6))
+    ax.plot(ts_df['Year'], y, label="Historical", marker='o')
+    ax.plot(future_years, future_preds, label="Forecast", linestyle='--', marker='x', color='red')
+    ax.set_title("Forecast of Global Waste Generation")
+    ax.set_xlabel("Year")
+    ax.set_ylabel("Waste Generated (Tons)")
+    ax.legend()
+    st.pyplot(fig)
+
+# --- Tab 3: Material-wise Waste ---
 with tab3:
-    st.subheader("Waste Generation Forecast (ARIMA)")
-    df_ts = df_filtered.groupby('Date')['Total_Waste'].sum()
+    st.subheader("🧱 Waste by Material Type")
+    material_waste = filtered_df.groupby('Material')['Waste generated'].sum().sort_values()
 
-    try:
-        model = ARIMA(df_ts, order=(1,1,1))
-        result = model.fit()
-        forecast = result.forecast(steps=12)
+    fig, ax = plt.subplots(figsize=(10, 5))
+    sns.barplot(x=material_waste.values, y=material_waste.index, palette="mako", ax=ax)
+    ax.set_xlabel("Total Waste Generated (Tons)")
+    st.pyplot(fig)
 
-        fig, ax = plt.subplots()
-        df_ts.plot(label='Actual', ax=ax)
-        forecast.plot(label='Forecast', ax=ax, color='orange')
-        plt.legend()
-        plt.title("12-Month Forecast")
-        st.pyplot(fig)
-    except Exception as e:
-        st.error(f"ARIMA model error: {e}")
-
-# 4. Facility Performance
+# --- Tab 4: Raw Data ---
 with tab4:
-    st.subheader("Facility Performance Overview")
-    if 'Facility' in df.columns:
-        facility_metrics = df_filtered.groupby('Facility')[['Efficiency', 'Recycled_Waste']].mean()
-        st.dataframe(facility_metrics.style.highlight_max(axis=0))
-
-        fig, ax = plt.subplots()
-        facility_metrics.plot(kind='bar', ax=ax)
-        plt.xticks(rotation=45)
-        plt.title("Facility Metrics")
-        st.pyplot(fig)
-    else:
-        st.warning("Facility data not available in dataset.")
-
+    st.subheader("🗃️ Filtered Data Preview")
+    st.dataframe(filtered_df)
