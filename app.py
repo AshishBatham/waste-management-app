@@ -17,7 +17,7 @@ This interactive dashboard visualizes waste generation data across countries, ye
 # Load data with caching
 @st.cache_data
 def load_data():
-    return pd.read_csv(r"C:\DS Project\filtered_waste_data.csv")
+    return pd.read_csv("filtered_waste_data.csv")
 
 df = load_data()
 
